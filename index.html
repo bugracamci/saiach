@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Saiach Gizlilik ve Destek</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&family=Azeret+Mono:wght@500&family=Big+Shoulders:wght@900&display=swap">
+<style>
+/* Layout: one readable column; Turkish then English, split by a hairline. */
+:root{
+  --bg:#E8EBEE; --surface:#F8F9FA; --ink:#101317; --muted:#59626C; --line:#C9D0D7; --signal:#FFD23F;
+  --f-body:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"Azeret Mono", ui-monospace, Menlo, monospace;
+  --f-mark:"Big Shoulders", "Arial Narrow", sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#0D0F12; --surface:#16191D; --ink:#ECEFF2; --muted:#8E97A1; --line:#2B3036; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#0D0F12; --surface:#16191D; --ink:#ECEFF2; --muted:#8E97A1; --line:#2B3036; color-scheme:dark }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;padding:32px 16px 64px}
+main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:12px}
+.badge{width:44px;height:44px;border-radius:10px;background:var(--signal);display:grid;place-items:center;flex:none}
+.badge svg{width:30px;height:24px}
+.brand b{font-family:var(--f-mark);font-size:30px;letter-spacing:.08em}
+nav{display:flex;gap:16px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:10px}
+h1{font-size:26px;line-height:1.2;margin:0;text-wrap:balance}
+h2{font-size:17px;margin:8px 0 0}
+p,ul{margin:0;max-width:62ch}
+ul{padding-left:20px}
+a{color:inherit}
+.meta{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+hr{border:0;border-top:1px solid var(--line);margin:8px 0;width:100%}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.mail{font-family:var(--f-mono);font-size:15px;word-break:break-all}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <span class="badge"><svg viewBox="0 0 30 24" aria-hidden="true"><g stroke="#101317" stroke-width="2.6" stroke-linecap="round"><path d="M6 3v18M12 3v18M18 3v18M24 3v18M2 18L28 6"/></g></svg></span>
+    <b>SAIACH</b>
+  </div>
+  <nav><a href="#tr">Türkçe</a><a href="#destek">Destek</a><a href="#en">English</a><a href="#support">Support</a></nav>
+
+  <section lang="tr" id="tr">
+    <span class="meta">Gizlilik politikası · Yürürlük: 9 Ekim 2026</span>
+    <h1>Saiach hiçbir kişisel veri toplamaz.</h1>
+    <div class="box"><p>Girdiğin hedefler ve kayıtlar yalnızca telefonunda saklanır. Bize ya da başka birine gönderilmez.</p></div>
+    <h2>Neler saklanır</h2>
+    <ul>
+      <li>Oluşturduğun hedefler (ad, hedef sayı, periyot, renk)</li>
+      <li>Eklediğin kayıtlar (tarih, saat ve miktar)</li>
+      <li>Hatırlatma ayarların ve yazdığın hatırlatma metinleri</li>
+    </ul>
+    <p>Bu bilgiler cihazının uygulamaya ayrılmış alanında durur. Uygulamayı silersen hepsi silinir.</p>
+    <h2>Hatırlatmalar</h2>
+    <p>Hatırlatmalar telefonunun kendisinde planlanır. Hiçbir sunucudan bildirim gönderilmez ve bildirim için cihaz kimliği toplanmaz.</p>
+    <h2>Saiach Pro satın alımı</h2>
+    <p>Pro, App Store üzerinden tek seferlik bir satın alımdır. Ödemeyi Apple işler; kart bilgilerini, Apple hesabını ya da ödeme ayrıntılarını biz görmeyiz. Uygulama yalnızca satın alımın yapılıp yapılmadığını App Store'a sorar.</p>
+    <h2>Neler yok</h2>
+    <ul>
+      <li>Hesap ya da giriş yok</li>
+      <li>Reklam, analitik ya da takip aracı yok</li>
+      <li>Kendi sunucumuz yok; uygulama yalnızca satın alma için App Store'a bağlanır</li>
+    </ul>
+    <h2>Çocuklar</h2>
+    <p>Saiach kimseden veri toplamadığı için çocuklardan da veri toplamaz.</p>
+    <h2>Değişiklikler</h2>
+    <p>Bu politika değişirse güncel hali bu sayfada yayınlanır ve yukarıdaki tarih güncellenir.</p>
+  </section>
+
+  <section lang="tr" id="destek">
+    <span class="meta">Destek</span>
+    <h2>Bir sorun mu var?</h2>
+    <p>Hata, öneri ya da satın alma sorunu için yaz. Genelde 2 iş günü içinde dönüyorum.</p>
+    <p class="mail"><a href="mailto:bugracamci@gmail.com?subject=Saiach">bugracamci@gmail.com</a></p>
+    <h2>Pro'yu yeni telefonda açmak</h2>
+    <p>Aynı Apple hesabıyla giriş yap, Saiach'ı aç: Ayarlar → Saiach Pro → <b>Satın alımı geri yükle</b>.</p>
+    <h2>Bildirim gelmiyor</h2>
+    <p>iPhone Ayarlar → Bildirimler → Saiach'tan izinleri aç. Saiach'ta Ayarlar → Bildirimler altında bugünkü ve planlanmış hatırlatmalarını görebilirsin. Odaklanma modu açıksa bildirimler gizlenebilir.</p>
+    <h2>Verilerimi nasıl yedeklerim?</h2>
+    <p>Ayarlar → Verileri dışa aktar ile tüm kayıtlarını CSV olarak paylaşabilirsin.</p>
+  </section>
+
+  <hr>
+
+  <section lang="en" id="en">
+    <span class="meta">Privacy policy · Effective 9 October 2026</span>
+    <h1>Saiach collects no personal data.</h1>
+    <div class="box"><p>The goals and entries you add are stored only on your phone. They are never sent to us or anyone else.</p></div>
+    <h2>What is stored</h2>
+    <ul>
+      <li>Goals you create (name, target, period, color)</li>
+      <li>Entries you log (date, time and amount)</li>
+      <li>Your reminder settings and any reminder text you write</li>
+    </ul>
+    <p>This lives in the app's private storage on your device. Deleting the app deletes all of it.</p>
+    <h2>Reminders</h2>
+    <p>Reminders are scheduled on your phone itself. Nothing is sent from a server, and no device identifier is collected for notifications.</p>
+    <h2>Saiach Pro purchase</h2>
+    <p>Pro is a one-time purchase through the App Store. Apple handles the payment; we never see your card, Apple Account or payment details. The app only asks the App Store whether the purchase was made.</p>
+    <h2>What isn't there</h2>
+    <ul>
+      <li>No account or sign-in</li>
+      <li>No ads, analytics or tracking tools</li>
+      <li>No server of our own; the app only talks to the App Store for the purchase</li>
+    </ul>
+    <h2>Children</h2>
+    <p>Because Saiach collects no data from anyone, it collects none from children.</p>
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with an updated date.</p>
+  </section>
+
+  <section lang="en" id="support">
+    <span class="meta">Support</span>
+    <h2>Something not working?</h2>
+    <p>Write for bugs, ideas or purchase problems. I usually reply within 2 business days.</p>
+    <p class="mail"><a href="mailto:bugracamci@gmail.com?subject=Saiach">bugracamci@gmail.com</a></p>
+    <h2>Unlocking Pro on a new phone</h2>
+    <p>Sign in with the same Apple Account, open Saiach: Settings → Saiach Pro → <b>Restore purchase</b>.</p>
+    <h2>Reminders don't arrive</h2>
+    <p>Turn on notifications in iPhone Settings → Notifications → Saiach, then check Settings → Notifications in Saiach to see today’s and scheduled reminders. A Focus mode can hide them.</p>
+    <h2>How do I back up my data?</h2>
+    <p>Settings → Export data shares all your entries as a CSV file.</p>
+  </section>
+</main>
+</body>
+</html>
